@@ -1,30 +1,9 @@
-Editorial by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+I am Olufemi Olamoyegun, a finance professional and data analyst passionate about empowering smarter business decisions through the fusion of financial expertise and data-driven insights.
 
+As a Certified Financial Modeling & Valuation Analyst (FMVA®) and Fellow of the Association of Investment Management & Finance (FAIMFIN), I bring proven capabilities in valuation, budgeting, forecasting, and financial reporting.
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
+Coupled with advanced skills in Power BI, AI-powered automation, and Excel modeling, I design interactive dashboards and AI toolkits that help organizations uncover trends, automate repetitive tasks, and make confident, strategic decisions.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+I thrive at the intersection of finance and technology, helping teams embrace digital transformation while maintaining rigorous analytical standards.
 
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+	
