@@ -1,212 +1,290 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olufemi Olamoyegun - Financial Analyst Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #343a40; /* Dark text */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
 
-	<body class="is-preload">
-		<div id ="wrapper" class="fade-in">
-			<div id="intro">
-				<img src="/images/portfolio.jpg" alt="" style = "width:150px; height:150px; border-radius: 50%">
-			</div>
-			<h1>Olufemi Olamoyegun FinovateWorks Portfolio</h1>
-		</div> 
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition-colors">Olufemi Olamoyegun</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">About</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <!-- Placeholder for profile image -->
+                <img src="https://placehold.co/150x150/a0c4ff/ffffff?text=Olufemi" alt="Olufemi Olamoyegun" class="rounded-full mx-auto w-36 h-36 border-4 border-white shadow-lg object-cover">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                Olufemi Olamoyegun
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up delay-100">
+                Financial Analyst | CFO | Business Analytics Leader
+            </p>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed animate-fade-in-up delay-200">
+                I help finance professionals save time, reduce errors, and build smarter workflows using Microsoft tools.
+            </p>
+            <div class="mt-10 animate-fade-in-up delay-300">
+                <a href="#contact" class="inline-block bg-white text-blue-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
 
-	<head>
-		<title>Olufemi Olamoyegun FinovateWorks Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                        I am Olufemi Olamoyegun, a dynamic leader in business analytics, financial strategy, and organizational development — with a proven record of driving transformation and mentoring future professionals.
+                        As Chief Financial Officer since November 2024, I apply strategic insights that redefine financial operations, boost performance, and drive sustainable growth.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">My Expertise</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li><strong>Excel 365:</strong> Copilot, REGEX, PIVOTBY, Office Scripts</li>
+                        <li><strong>Power BI:</strong> Reports, forecasting, automation</li>
+                        <li><strong>Microsoft Fabric:</strong> Dataflows, pipelines, end-of-month workflows</li>
+                        <li><strong>Dynamics 365 Finance:</strong> Integrated reporting, dual-write, analytics</li>
+                    </ul>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        I simplify complex finance and data workflows through:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li>LinkedIn posts & carousels</li>
+                        <li>GitHub projects</li>
+                        <li>Reels & Shorts (IG, TikTok, YouTube)</li>
+                        <li>Downloadable templates & dashboards</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Recognitions & Fellowships</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li>Fellow of the AI in Business, Management, and Finance</li>
+                        <li>CFA Investment Foundations certificate</li>
+                        <li>FMVA® — Financial Modeling & Valuation Analyst</li>
+                        <li>Honored with the Global Recognition Award 2024 for business innovation and mentoring impact</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">How I Help Teams</h3>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                        My work in analytics, automation, and AI-powered finance has helped teams:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Reduce month-end close time</li>
+                        <li>Improve forecast accuracy</li>
+                        <li>Automate recurring tasks with Excel & Power BI</li>
+                        <li>Leverage Microsoft Fabric to centralize finance data</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-xl font-medium text-gray-800">
+                    Whether you're in Finance, FP&A, Accounting, or Operations, let’s connect to exchange ideas and accelerate transformation with the right tools.
+                </p>
+            </div>
+        </div>
+    </section>
 
-	</head>
-	<body class="is-preload">
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Linear Regression Analysis in Excel</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project aimed at advanced financial modeling with Fabric: Utilizing Microsoft Fabric to create a unified data estate for both operational (call center) and financial (D365) data. This would enable more sophisticated cross-domain analysis, predictive modeling for resource needs, and advanced cost allocation.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
+                            VIEW PROJECT
+                        </a>
+                    </div>
+                </div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Temitayo Deborah Anifowose<br />
-						</h1>
-						<p> Hello! I am Olufemi. A Financial Analyst I help finance professionals save time, reduce errors, and build smarter workflows using Microsoft tools.
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Why Finance Teams Are The Future of Business Intelligence</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project aimed at cleaning and transforming the raw dataset, making it suitable for analysis.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
+                            VIEW PROJECT
+                        </a>
+                    </div>
+                </div>
 
-📊 I share real-world solutions across:
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Business Analysis in Power BI</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project aimed at visually representing the business KPIs and identifying trends and patterns.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
+                            VIEW PROJECT
+                        </a>
+                    </div>
+                </div>
 
-• Excel 365 (Copilot, REGEX, PIVOTBY, Office Scripts)
-• Power BI (Reports, forecasting, automation)
-• Microsoft Fabric (dataflows, pipelines, end-of-month workflows)
-• Dynamics 365 Finance (integrated reporting, dual-write, analytics)
+                <!-- Project Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Sales Analysis in Excel</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project aimed at identifying important KPIs, analysing data and providing insights and impactful recommendations.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
+                            VIEW PROJECT
+                        </a>
+                    </div>
+                </div>
 
-🔁 I simplify complex finance and data workflows through:
+                <!-- Project Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Business Analysis in SQL</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project analyzing data to provide answers to business questions and extract insights to enhance business growth.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
+                            VIEW PROJECT REPORT
+                        </a>
+                        <a href="#" class="inline-block bg-gray-700 text-white font-medium py-2 px-4 rounded-md hover:bg-gray-800 transition-colors text-sm">
+                            VIEW FULL CODE
+                        </a>
+                    </div>
+                </div>
 
-• LinkedIn posts & carousels
-• GitHub projects
-• Reels & Shorts (IG, TikTok, YouTube)
-• Downloadable templates & dashboards
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 transform hover:scale-105 transition-all duration-300">
+                    Download Resume (Coming Soon)
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
+            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                <div class="space-y-6 text-center">
+                    <div>
+                        <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+                        <p class="text-lg text-gray-700">Lagos, Nigeria</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone text-blue-600 text-2xl mb-2"></i>
+                        <p class="text-lg text-gray-700">(Phone number not provided)</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope text-blue-600 text-2xl mb-2"></i>
+                        <p class="text-lg text-gray-700">
+                            <a href="mailto:femi_olamoyegun@outlook.com" class="text-blue-600 hover:underline">femi_olamoyegun@outlook.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Connect with me</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://linkedin.com/in/olufemi-olamoyegun" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 transition-colors transform hover:scale-110">
+                            <i class="fab fa-linkedin text-4xl"></i>
+                        </a>
+                        <a href="https://github.com/olufemi-olamoyegun" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-gray-900 transition-colors transform hover:scale-110">
+                            <i class="fab fa-github text-4xl"></i>
+                        </a>
+                        <!-- Add other social links if available -->
+                        <a href="https://twitter.com/olufemi_olamoyegun" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600 transition-colors transform hover:scale-110">
+                            <i class="fab fa-twitter text-4xl"></i>
+                        </a>
+                        <a href="https://instagram.com/olufemi_olamoyegun" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 transition-colors transform hover:scale-110">
+                            <i class="fab fa-instagram text-4xl"></i>
+                        </a>
+                        <a href="https://youtube.com/olufemi_olamoyegun" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 transition-colors transform hover:scale-110">
+                            <i class="fab fa-youtube text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-I am Olufemi Olamoyegun, a dynamic leader in business analytics, financial strategy, and organizational development — with a proven record of driving transformation and mentoring future professionals.
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="current-year"></span> Olufemi Olamoyegun. All rights reserved.</p>
+            <p class="text-sm mt-2">Design inspired by HTML5 UP and styled with Tailwind CSS</p>
+        </div>
+    </footer>
 
-As Chief Financial Officer since November 2024, I apply strategic insights that redefine financial operations, boost performance, and drive sustainable growth.
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-🏅 Recognitions & Fellowships:
-- Fellow of the AI in Business, Management, and Finance 
-- CFA Investment Foundations certificate 
-- FMVA® — Financial Modeling & Valuation Analyst
-- Honored with the Global Recognition Award 2024 for business innovation and mentoring impact
-
-💡 My work in analytics, automation, and AI-powered finance has helped teams:
-
-• Reduce month-end close time
-• Improve forecast accuracy
-• Automate recurring tasks with Excel & Power BI
-• Leverage Microsoft Fabric to centralize finance data
-
-
-Whether you're in Finance, FP&A, Accounting, or Operations, let’s connect to exchange ideas and accelerate transformation with the right tools..  <p></p>
-							<a href="https://www.linkedin.com/in/olufemi-olamoyegun//">@MyLinkedIn</a> 
-					
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Financial Analyst</a>
-					</header>
-					
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-								<li><a href="https://x.com/olamfe" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/olufemi-olamoyegun//" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/olufemiolamoyegun" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/olufemiolamoyegun/Project---PWC-Call-Centre-Solution-with-Power-BI">Linear Regression Analysis in Excel<br />
-									</a></h2>
-									<p>This projects aimed at Advanced Financial Modeling with Fabric: Utilize Microsoft Fabric to create a unified data estate for both operational (call center) and financial (D365) data. This would enable more sophisticated cross-domain analysis, predictive modeling for resource needs, and advanced cost allocation</p>
-								</header>
-								<a href="https://github.com/olufemiolamoyegun/FemiPortfolio/blob/main/images/Call%20center.jpg" class="image main"><img src="images/Call%20center.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/olufemiolamoyegun/Project---PWC-Call-Centre-Solution-with-Power-BI" class="button large">View Project</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://medium.com/@olamoyegun07/10-years-of-power-bi-why-finance-teams-are-the-future-of-business-intelligence-8ab73a1810ba">why-finance-teams-are-the-future-of-business-intelligence <br />
-									</a></h2>
-									</header>
-									<a href="why-finance-teams-are-the-future-of-business-intelligence" class="image fit"><img src="images/data cleaning.png" alt="" /></a>
-									<p>This project aimed at cleaning and transforming the raw dataset, making it suitable for analysis</p>
-									<ul class="actions special">
-										<li><a href="why-finance-teams-are-the-future-of-business-intelligence" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="why-finance-teams-are-the-future-of-business-intelligence">Business Analysis in Power BI<br />
-										</a></h2>
-									</header>
-									<a href="why-finance-teams-are-the-future-of-business-intelligence" class="image fit"><img src="images/power bi business.jpg" alt="" /></a>
-									<p>This project aimed at visually representing the business KPIs and identifying trends and patterns
-									<ul class="actions special">
-										<li><a href="why-finance-teams-are-the-future-of-business-intelligence" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="why-finance-teams-are-the-future-of-business-intelligence">Sales Analysis in Excel<br />
-										</a></h2>
-									</header>
-									<a href="why-finance-teams-are-the-future-of-business-intelligence" class="image fit"><img src="images/sales picture.jpg" alt="" /></a>
-									<p>This projects aimed at identifying important KPIs, analysing data and providing insights and impactful recommendations.</p>
-									<ul class="actions special">
-										<li><a href="why-finance-teams-are-the-future-of-business-intelligence" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="why-finance-teams-are-the-future-of-business-intelligence">Business Analysis in SQL<br />
-										</a></h2>
-									</header>
-									<a href="why-finance-teams-are-the-future-of-business-intelligence" class="image fit"><img src="images/Easy-Miso-Ramen_square-0723.jpg" alt="" /></a>
-									<p>This project analysing data to provide answers to business question and extract insights to enhance the business growth.</p>
-									<ul class="actions special">
-										<li><a href=why-finance-teams-are-the-future-of-business-intelligence" class="button">View Project Report</a></li>
-										<li><a href="https://github.com/olufemiolamoyegun/Employees-Demographics-and-Salary-Analysis-using-SQL.sql" class="button">View Full Code</a></li>
-									</ul>
-										</a></h2>
-									</header>
-								</article>
-
-				
-
-						<section class="split contact">
-							<ul class="actions special">
-								<li><a href=" class="button">Download Resume</a></li>
-							</ul>
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Lagos, Nigeria<br />
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#"></a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">femi_olamoyegun@outlook.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/olufemi-olamoyegun/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/olufemiolamoyegun" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-						
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        // Simple scroll animation for hero section elements (optional, for visual flair)
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroElements = document.querySelectorAll('.animate-fade-in-up');
+            heroElements.forEach((el, index) => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
 </html>
-
