@@ -1,543 +1,326 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Elements - Editorial by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olufemi Olamoyegun | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #2563eb, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 rounded-b-xl">
+        <div class="flex items-center mb-4 md:mb-0">
+            <h1 class="text-2xl font-bold text-gray-900">Olufemi Olamoyegun</h1>
+        </div>
+        <div class="flex space-x-6">
+            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+            <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Certifications</a>
+            <a href="#projects_demos" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Projects & Demos</a>
+            <a href="#community" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Community</a>
+            <a href="#publications" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Publications</a>
+            <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Main Container -->
+    <div class="container mx-auto p-6 md:p-12 w-full max-w-5xl">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white text-3xl font-bold">💼</span>
+                </div>
+                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
+                    Olufemi Olamoyegun
+                </h1>
+            </div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+                Chief Financial Officer | Microsoft Certified: Power BI Analyst | Excel 365 & Fabric for Modern Finance | Award-Winning Business Analytics Leader | Dashboards • Automation • Tutorials
+            </p>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-2">
+                I help finance professionals save time, reduce errors, and build smarter workflows using Microsoft tools.
+            </p>
+            <a href="#" class="inline-block mt-6 bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">Let's Connect</a>
+        </header>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
+            <p class="text-gray-600 mb-4">
+                I am Olufemi Olamoyegun, a dynamic leader in business analytics, financial strategy, and organizational development — with a proven record of driving transformation and mentoring future professionals. As Chief Financial Officer since November 2024, I apply strategic insights that redefine financial operations, boost performance, and drive sustainable growth.
+            </p>
 
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>Elements</h1>
-									</header>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">My Expertise</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li><span class="font-semibold">Excel 365:</span> Copilot, REGEX, PIVOTBY, Office Scripts</li>
+                <li><span class="font-semibold">Power BI:</span> Reports, forecasting, automation</li>
+                <li><span class="font-semibold">Microsoft Fabric:</span> Dataflows, pipelines, end-of-month workflows</li>
+                <li><span class="font-semibold">Dynamics 365 Finance:</span> Integrated reporting, dual-write, analytics</li>
+            </ul>
+            <p class="text-gray-600 mt-4">
+                I simplify complex finance and data workflows through:
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-gray-600 mt-2">
+                <li>LinkedIn posts & carousels</li>
+                <li>GitHub projects</li>
+                <li>Reels & Shorts (IG, TikTok, YouTube)</li>
+                <li>Downloadable templates & dashboards</li>
+            </ul>
 
-									<!-- Content -->
-										<h2 id="content">Sample Content</h2>
-										<p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.</p>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<h3>Sem turpis amet semper</h3>
-												<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-											</div>
-											<div class="col-6 col-12-small">
-												<h3>Magna odio tempus commodo</h3>
-												<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan.</p>
-											</div>
-											<!-- Break -->
-											<div class="col-4 col-12-medium">
-												<h3>Interdum sapien gravida</h3>
-												<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Faucibus consequat lorem</h3>
-												<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Accumsan montes viverra</h3>
-												<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-											</div>
-										</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">Recognitions & Fellowships</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li>Fellow of the AI in Business, Management, and Finance
+                    <a href="https://drive.google.com/file/d/1BSSJOHyCpUG0iHzXC9jpV92Abi02A6Sw/view" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Certificate</a>
+                </li>
+            </ul>
 
-									<hr class="major" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">Awards</h3>
+            <p class="text-gray-600">
+                2024 Global Recognition Awards for my outstanding leadership and creative enterprise solutions while serving as a Business Analytics Director Cadworks Ltd.
+            </p>
 
-									<!-- Elements -->
-										<h2 id="elements">Elements</h2>
-										<div class="row gtr-200">
-											<div class="col-6 col-12-medium">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">How I Help Teams</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li>Reduce month-end close time</li>
+                <li>Improve forecast accuracy</li>
+                <li>Automate recurring tasks with Excel & Power BI</li>
+                <li>Leverage Microsoft Fabric to centralize finance data</li>
+            </ul>
+            <p class="text-gray-600 mt-4">
+                Whether you're in Finance, FP&A, Accounting, or Operations, let’s connect to exchange ideas and accelerate transformation with the right tools.
+            </p>
+            
+            <div class="mt-8 text-center bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">✨ Get Tailored Insight ✨</h3>
+                <p class="text-gray-600 mb-4">Select your role to get a quick, AI-powered insight on how to accelerate transformation in your field.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Finance Professional</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">FP&A Specialist</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Accounting Professional</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Operations Manager</button>
+                </div>
+                <button class="mt-4 bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-blue-700 transition-colors duration-300">Get Insight</button>
+            </div>
+        </section>
 
-												<!-- Text stuff -->
-													<h3>Text</h3>
-													<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-													This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-													This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-													Finally, this is a <a href="#">link</a>.</p>
-													<hr />
-													<h2>Heading Level 2</h2>
-													<h3>Heading Level 3</h3>
-													<h4>Heading Level 4</h4>
-													<hr />
-													<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+        <!-- Certifications Section -->
+        <section id="certifications" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">🎓 Certifications</h2>
+            <div class="space-y-6">
+                <!-- CFI Certifications -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📊 FMVA® — Financial Modeling & Valuation Analyst</h3>
+                    <p class="text-gray-500 mb-2">Certified by: Corporate Finance Institute</p>
+                    <a href="https://www.credential.net/a5aba2fc-b5b8-476a-b64a-c59bf17c7cea#acc.z9V3CBMP" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-link mr-2"></i>View Credential</a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📈 BIDA™ — Business Intelligence & Data Analyst</h3>
+                    <p class="text-gray-500 mb-2">Certified by: Corporate Finance Institute</p>
+                    <a href="https://www.credential.net/7cf78594-60f5-458b-b324-bcdc4c63b39a#acc.JE4ahGoH" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-link mr-2"></i>View Credential</a>
+                </div>
+                
+                <!-- Microsoft Certifications -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">🖥 Microsoft Certifications</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 pl-4">
+                        <li>
+                            <span class="font-semibold">PL‑300</span> – Power BI Data Analyst Associate
+                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/dec9f395aa1b63d5?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold">DP‑600</span> – Fabric Analytics Engineer Associate
+                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/307aba41668023c2?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Accounting Tools -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📄 Accounting Tools</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 pl-4">
+                        <li>
+                            <span class="font-semibold">CFA Investment Foundation Certificate</span>
+                            <a href="https://basno.com/iohin3ax/certificate" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold">QuickBooks ProAdvisor</span>
+                            <a href="https://www.credly.com/badges/2b9f11fe-e0da-46f6-ae6a-e48dab873a64/public_url" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold">Xero Certified Advisor</span>
+                            <a href="https://central.xero.com/s/print-certificate?id=a5TUv00000MgHWPMA3" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-												<!-- Lists -->
-													<h3>Lists</h3>
-													<div class="row">
-														<div class="col-6 col-12-small">
+        <!-- Merged Projects Section -->
+        <section id="projects_demos" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">💻 Projects & Demos</h2>
+            <p class="text-gray-600 mb-6">
+                This repository is a collection of my work in finance automation, analytics, and business intelligence. Here you'll find everything from practical Excel templates to comprehensive Power BI and Microsoft Fabric projects.
+            </p>
 
-															<h4>Unordered</h4>
-															<ul>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Sagittis lorem eleifend.</li>
-																<li>Felis dolore viverra.</li>
-															</ul>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">💡 No-Code Excel Demos & Templates</h3>
+            <p class="text-gray-600 mb-4">Practical, ready-to-use solutions for finance professionals:</p>
 
-															<h4>Alternate</h4>
-															<ul class="alt">
-																<li>Dolor etiam magna etiam.</li>
-																<li>Sagittis lorem eleifend.</li>
-																<li>Felis feugiat viverra.</li>
-															</ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- New Project Card 1: Payroll Calculator -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Payroll+Calculator" alt="Payroll Calculator Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Payroll Calculator (2025 Tax Law Update)</h4>
+                    <p class="text-gray-500 mb-4">Automated payroll and PAYE calculator with new reliefs, personal allowances, and band tax calculations. (Excel Template)</p>
+                    <a href="/excel/payroll-calculator-2025" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/payroll-calculator-2025</a>
+                </div>
 
-														</div>
-														<div class="col-6 col-12-small">
+                <!-- New Project Card 2: Event Log Tracker -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Event+Log+Tracker" alt="Event Log Tracker Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Event Log Tracker with Conditional Formatting</h4>
+                    <p class="text-gray-500 mb-4">Automatically highlights past events older than 3 or 6 months, with whole-row formatting for visibility. (Excel Template)</p>
+                    <a href="/excel/conditional-formatting" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/conditional-formatting</a>
+                </div>
 
-															<h4>Ordered</h4>
-															<ol>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Etiam vel lorem sed viverra.</li>
-																<li>Felis dolore viverra.</li>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Etiam vel lorem sed viverra.</li>
-																<li>Felis dolore viverra.</li>
-															</ol>
+                <!-- New Project Card 3: Budget vs. Actuals -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Budget+vs+Actuals" alt="Budget vs. Actuals Dashboard Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Budget vs. Actuals Dashboard</h4>
+                    <p class="text-gray-500 mb-4">Dynamic Excel dashboard for tracking monthly performance, with variance analysis and conditional alerts.</p>
+                    <a href="/excel/budget-vs-actuals" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/budget-vs-actuals</a>
+                </div>
+            </div>
 
-															<h4>Icons</h4>
-															<ul class="icons">
-																<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-																<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-																<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-																<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-																<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-																<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-															</ul>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">📊 Analytics & Finance Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project Card 1 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Fabric+Data+Estate+Preview" alt="Microsoft Fabric Data Estate Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Microsoft Fabric: Unified Financial Data Estate</h4>
+                    <p class="text-gray-500 mb-4">Built a proof-of-concept model integrating Dynamics 365 Finance with call-center operational data for advanced cost allocation and forecasting. (GitHub Repo)</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                <!-- Project Card 2 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=PySpark+SCD+2" alt="PySpark SCD Type 2 Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">SCD Type 2 Implementation (PySpark)</h4>
+                    <p class="text-gray-500 mb-4">Hands-on demo of Slowly Changing Dimensions for finance master data management, with business rules and version tracking. (GitHub Repo)</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                <!-- Project Card 3 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Power+BI+Reports" alt="Power BI Reports Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Power BI Finance Reports</h4>
+                    <p class="text-gray-500 mb-4">End-to-end reporting templates, including rolling forecasts, cash flow dashboards, and management KPIs.</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                 <!-- Project Card 4 with visual placeholder -->
+                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Sales+Dashboard+Preview" alt="Sales Analysis in Excel" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Sales Analysis in Excel</h4>
+                    <p class="text-gray-500 mb-4">This project aimed at identifying important KPIs, analysing data and providing insights and impactful recommendations.</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+            </div>
+        </section>
 
-														</div>
-													</div>
-													<h4>Definition</h4>
-													<dl>
-														<dt>Item1</dt>
-														<dd>
-															<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-														</dd>
-														<dt>Item2</dt>
-														<dd>
-															<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-														</dd>
-														<dt>Item3</dt>
-														<dd>
-															<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-														</dd>
-													</dl>
+        <!-- New Community Section -->
+        <section id="community" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">🌍 Community Contributions</h2>
+            <p class="text-gray-600 mb-6">
+                I'm committed to sharing my knowledge and contributing to the finance and data community. Here are some of the platforms where I've contributed.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start space-x-4">
+                    <div class="text-4xl text-yellow-600">🥉</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Excel Tech Community – Brass Contributor (2024)</h3>
+                        <p class="text-gray-500 mb-4">Shared step-by-step answers, downloadable templates, and no-code solutions.</p>
+                        <a href="https://github.com/olufemiolamoyegun" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-external-link-alt mr-2"></i>View My Contributions</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start space-x-4">
+                    <div class="text-4xl text-blue-600">📊</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Power BI Community – Frequent Visitor</h3>
+                        <p class="text-gray-500 mb-4">Active in discussions, sharing visualization best practices and financial modeling techniques.</p>
+                        <a href="https://www.linkedin.com/in/olufemiolamoyegun/" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-external-link-alt mr-2"></i>View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-													<h4>Actions</h4>
-													<ul class="actions">
-														<li><a href="#" class="button primary">Default</a></li>
-														<li><a href="#" class="button">Default</a></li>
-													</ul>
-													<ul class="actions small">
-														<li><a href="#" class="button primary small">Small</a></li>
-														<li><a href="#" class="button small">Small</a></li>
-													</ul>
-													<div class="row">
-														<div class="col-6 col-12-small">
-															<ul class="actions stacked">
-																<li><a href="#" class="button primary">Default</a></li>
-																<li><a href="#" class="button">Default</a></li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-small">
-															<ul class="actions stacked">
-																<li><a href="#" class="button primary small">Small</a></li>
-																<li><a href="#" class="button small">Small</a></li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-small">
-															<ul class="actions stacked">
-																<li><a href="#" class="button primary fit">Default</a></li>
-																<li><a href="#" class="button fit">Default</a></li>
-															</ul>
-														</div>
-														<div class="col-6 col-12-small">
-															<ul class="actions stacked">
-																<li><a href="#" class="button primary small fit">Small</a></li>
-																<li><a href="#" class="button small fit">Small</a></li>
-															</ul>
-														</div>
-													</div>
+        <!-- New Publications Section -->
+        <section id="publications" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">📝 Publications & Writing</h2>
+            <p class="text-gray-600 mb-6">
+                I regularly write articles and create resources to help finance professionals streamline their work with modern tools.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- New Publication: Payroll Ebook -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Ebook: Automated Payroll & PAYE Calculator</h3>
+                    <p class="text-gray-500 mb-4">A comprehensive guide and calculator template for automating payroll with updated tax laws, reliefs, and band tax calculations.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://tr.ee/NS6IUDfGqm" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">PREMIUM</a>
+                        <a href="https://tr.ee/3ojH0X8g5L" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STANDARD</a>
+                        <a href="https://tr.ee/NS6IUDfGqm" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STARTER</a>
+                    </div>
+                </div>
+                <!-- Publication Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">50 ChatGPT Finance Prompts for Smarter Business Decisions</h3>
+                    <p class="text-gray-500 mb-4">Practical guide for finance teams to integrate AI into workflows.</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">PREMIUM</a>
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STANDARD</a>
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STARTER</a>
+                    </div>
+                </div>
+                <!-- Articles and Guides Card -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Articles & Guides</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 pl-4">
+                        <li>
+                            Articles on <span class="font-semibold">Medium</span> and <span class="font-semibold">LinkedIn</span> covering Excel, Power BI, and Finance automation.
+                        </li>
+                        <li>
+                            Curated templates and resources in my <span class="font-semibold">Notion Workspace</span>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <ul class="space-y-2 text-gray-600">
+                <li><i class="fas fa-map-marker-alt mr-2"></i>Lagos, Nigeria</li>
+                <li><i class="fas fa-envelope mr-2"></i>femi_olamoyegun@outlook.com</li>
+                <li>
+                    <i class="fas fa-globe mr-2"></i>Connect with me: 
+                    <a href="https://www.linkedin.com/in/olufemiolamoyegun/" target="_blank" class="text-blue-600 hover:underline ml-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/olufemiolamoyegun" target="_blank" class="text-gray-800 hover:underline ml-2"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </div>
 
-													<h4>Pagination</h4>
-													<ul class="pagination">
-														<li><span class="button disabled">Prev</span></li>
-														<li><a href="#" class="page active">1</a></li>
-														<li><a href="#" class="page">2</a></li>
-														<li><a href="#" class="page">3</a></li>
-														<li><span>&hellip;</span></li>
-														<li><a href="#" class="page">8</a></li>
-														<li><a href="#" class="page">9</a></li>
-														<li><a href="#" class="page">10</a></li>
-														<li><a href="#" class="button">Next</a></li>
-													</ul>
-
-												<!-- Blockquote -->
-													<h3>Blockquote</h3>
-													<blockquote>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</blockquote>
-
-												<!-- Table -->
-													<h3>Table</h3>
-
-													<h4>Default</h4>
-													<div class="table-wrapper">
-														<table>
-															<thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Description</th>
-																	<th>Price</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>Item1</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item2</td>
-																	<td>Vis ac commodo adipiscing arcu aliquet.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item3</td>
-																	<td> Morbi faucibus arcu accumsan lorem.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item4</td>
-																	<td>Vitae integer tempus condimentum.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item5</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-															</tbody>
-															<tfoot>
-																<tr>
-																	<td colspan="2"></td>
-																	<td>100.00</td>
-																</tr>
-															</tfoot>
-														</table>
-													</div>
-
-													<h4>Alternate</h4>
-													<div class="table-wrapper">
-														<table class="alt">
-															<thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Description</th>
-																	<th>Price</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>Item1</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item2</td>
-																	<td>Vis ac commodo adipiscing arcu aliquet.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item3</td>
-																	<td> Morbi faucibus arcu accumsan lorem.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item4</td>
-																	<td>Vitae integer tempus condimentum.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item5</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-															</tbody>
-															<tfoot>
-																<tr>
-																	<td colspan="2"></td>
-																	<td>100.00</td>
-																</tr>
-															</tfoot>
-														</table>
-													</div>
-
-											</div>
-											<div class="col-6 col-12-medium">
-
-												<!-- Buttons -->
-													<h3>Buttons</h3>
-													<ul class="actions">
-														<li><a href="#" class="button primary">Primary</a></li>
-														<li><a href="#" class="button">Default</a></li>
-													</ul>
-													<ul class="actions">
-														<li><a href="#" class="button large">Large</a></li>
-														<li><a href="#" class="button">Default</a></li>
-														<li><a href="#" class="button small">Small</a></li>
-													</ul>
-													<ul class="actions">
-														<li><a href="#" class="button primary large">Large</a></li>
-														<li><a href="#" class="button primary">Default</a></li>
-														<li><a href="#" class="button primary small">Small</a></li>
-													</ul>
-													<ul class="actions fit">
-														<li><a href="#" class="button primary fit">Fit</a></li>
-														<li><a href="#" class="button fit">Fit</a></li>
-													</ul>
-													<ul class="actions fit small">
-														<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-														<li><a href="#" class="button fit small">Fit + Small</a></li>
-													</ul>
-													<ul class="actions">
-														<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
-														<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-													</ul>
-													<ul class="actions">
-														<li><span class="button primary disabled">Primary</span></li>
-														<li><span class="button disabled">Default</span></li>
-													</ul>
-
-												<!-- Form -->
-													<h3>Form</h3>
-
-													<form method="post" action="#">
-														<div class="row gtr-uniform">
-															<div class="col-6 col-12-xsmall">
-																<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-															</div>
-															<div class="col-6 col-12-xsmall">
-																<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-															</div>
-															<!-- Break -->
-															<div class="col-12">
-																<select name="demo-category" id="demo-category">
-																	<option value="">- Category -</option>
-																	<option value="1">Manufacturing</option>
-																	<option value="1">Shipping</option>
-																	<option value="1">Administration</option>
-																	<option value="1">Human Resources</option>
-																</select>
-															</div>
-															<!-- Break -->
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-																<label for="demo-priority-low">Low</label>
-															</div>
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-normal" name="demo-priority">
-																<label for="demo-priority-normal">Normal</label>
-															</div>
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-high" name="demo-priority">
-																<label for="demo-priority-high">High</label>
-															</div>
-															<!-- Break -->
-															<div class="col-6 col-12-small">
-																<input type="checkbox" id="demo-copy" name="demo-copy">
-																<label for="demo-copy">Email me a copy</label>
-															</div>
-															<div class="col-6 col-12-small">
-																<input type="checkbox" id="demo-human" name="demo-human" checked>
-																<label for="demo-human">I am a human</label>
-															</div>
-															<!-- Break -->
-															<div class="col-12">
-																<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-															</div>
-															<!-- Break -->
-															<div class="col-12">
-																<ul class="actions">
-																	<li><input type="submit" value="Send Message" class="primary" /></li>
-																	<li><input type="reset" value="Reset" /></li>
-																</ul>
-															</div>
-														</div>
-													</form>
-
-												<!-- Image -->
-													<h3>Image</h3>
-
-													<h4>Fit</h4>
-													<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
-													<div class="box alt">
-														<div class="row gtr-50 gtr-uniform">
-															<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-															<!-- Break -->
-															<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-															<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-														</div>
-													</div>
-
-													<h4>Left &amp; Right</h4>
-													<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-													<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-
-												<!-- Box -->
-													<h3>Box</h3>
-													<div class="box">
-														<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum.</p>
-													</div>
-
-												<!-- Preformatted Code -->
-													<h3>Preformatted</h3>
-													<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
-
-											</div>
-										</div>
-
-								</section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
