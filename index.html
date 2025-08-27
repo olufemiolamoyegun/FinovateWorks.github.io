@@ -3,500 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olufemi Olamoyegun - Financial Analyst Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Olufemi Olamoyegun | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Custom font for better aesthetics */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa; /* Light background */
-            color: #343a40; /* Dark text */
+            background-color: #f3f4f6;
+            color: #1f2937;
         }
-        /* Smooth scroll for navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Custom scrollbar for a cleaner look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-
-        /* Spinner animation for loading state */
-        .spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top: 4px solid #fff;
-            width: 24px;
-            height: 24px;
-            -webkit-animation: spin 1s linear infinite; /* Safari */
-            animation: spin 1s linear infinite;
-        }
-        @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .text-gradient {
+            background-image: linear-gradient(to right, #2563eb, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="antialiased">
-
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4 fixed w-full z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition-colors">Olufemi Olamoyegun</a>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">About</a></li>
-                    <li><a href="#projects" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">Projects</a></li>
-                    <li><a href="#publications" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">Publications</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium transition-colors rounded-md p-2 hover:bg-blue-50">Contact</a></li>
-                </ul>
-            </nav>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 rounded-b-xl">
+        <div class="flex items-center mb-4 md:mb-0">
+            <h1 class="text-2xl font-bold text-gray-900">Olufemi Olamoyegun</h1>
         </div>
-    </header>
+        <div class="flex space-x-6">
+            <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+            <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Certifications</a>
+            <a href="#projects_demos" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Projects & Demos</a>
+            <a href="#community" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Community</a>
+            <a href="#publications" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Publications</a>
+            <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 md:py-32 flex items-center justify-center min-h-screen-75">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-8">
-                <!-- Placeholder for profile image -->
-                <img src="https://placehold.co/150x150/a0c4ff/ffffff?text=Olufemi" alt="Olufemi Olamoyegun" class="rounded-full mx-auto w-36 h-36 border-4 border-white shadow-lg object-cover">
+    <!-- Main Container -->
+    <div class="container mx-auto p-6 md:p-12 w-full max-w-5xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white text-3xl font-bold">💼</span>
+                </div>
+                <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
+                    Olufemi Olamoyegun
+                </h1>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
-                Olufemi Olamoyegun
-            </h1>
-            <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up delay-100">
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
                 Chief Financial Officer | Microsoft Certified: Power BI Analyst | Excel 365 & Fabric for Modern Finance | Award-Winning Business Analytics Leader | Dashboards • Automation • Tutorials
             </p>
-            <p class="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed animate-fade-in-up delay-200">
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-2">
                 I help finance professionals save time, reduce errors, and build smarter workflows using Microsoft tools.
             </p>
-            <div class="mt-10 animate-fade-in-up delay-300">
-                <a href="#contact" class="inline-block bg-white text-blue-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
-                    Let's Connect
-                </a>
+            <a href="#" class="inline-block mt-6 bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">Let's Connect</a>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">About Me</h2>
+            <p class="text-gray-600 mb-4">
+                I am Olufemi Olamoyegun, a dynamic leader in business analytics, financial strategy, and organizational development — with a proven record of driving transformation and mentoring future professionals. As Chief Financial Officer since November 2024, I apply strategic insights that redefine financial operations, boost performance, and drive sustainable growth.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">My Expertise</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li><span class="font-semibold">Excel 365:</span> Copilot, REGEX, PIVOTBY, Office Scripts</li>
+                <li><span class="font-semibold">Power BI:</span> Reports, forecasting, automation</li>
+                <li><span class="font-semibold">Microsoft Fabric:</span> Dataflows, pipelines, end-of-month workflows</li>
+                <li><span class="font-semibold">Dynamics 365 Finance:</span> Integrated reporting, dual-write, analytics</li>
+            </ul>
+            <p class="text-gray-600 mt-4">
+                I simplify complex finance and data workflows through:
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-gray-600 mt-2">
+                <li>LinkedIn posts & carousels</li>
+                <li>GitHub projects</li>
+                <li>Reels & Shorts (IG, TikTok, YouTube)</li>
+                <li>Downloadable templates & dashboards</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">Recognitions & Fellowships</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li>Fellow of the AI in Business, Management, and Finance
+                    <a href="https://drive.google.com/file/d/1BSSJOHyCpUG0iHzXC9jpV92Abi02A6Sw/view" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Certificate</a>
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">Awards</h3>
+            <p class="text-gray-600">
+                2024 Global Recognition Awards for my outstanding leadership and creative enterprise solutions while serving as a Business Analytics Director Cadworks Ltd.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 mt-6">How I Help Teams</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+                <li>Reduce month-end close time</li>
+                <li>Improve forecast accuracy</li>
+                <li>Automate recurring tasks with Excel & Power BI</li>
+                <li>Leverage Microsoft Fabric to centralize finance data</li>
+            </ul>
+            <p class="text-gray-600 mt-4">
+                Whether you're in Finance, FP&A, Accounting, or Operations, let’s connect to exchange ideas and accelerate transformation with the right tools.
+            </p>
+            
+            <div class="mt-8 text-center bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">✨ Get Tailored Insight ✨</h3>
+                <p class="text-gray-600 mb-4">Select your role to get a quick, AI-powered insight on how to accelerate transformation in your field.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Finance Professional</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">FP&A Specialist</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Accounting Professional</button>
+                    <button class="bg-white border border-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full hover:bg-gray-100 transition-colors text-sm">Operations Manager</button>
+                </div>
+                <button class="mt-4 bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-blue-700 transition-colors duration-300">Get Insight</button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                <div>
-                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
-                        I am Olufemi Olamoyegun, a dynamic leader in business analytics, financial strategy, and organizational development — with a proven record of driving transformation and mentoring future professionals.
-                        As Chief Financial Officer since November 2024, I apply strategic insights that redefine financial operations, boost performance, and drive sustainable growth.
-                    </p>
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">My Expertise</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                        <li><strong>Excel 365:</strong> Copilot, REGEX, PIVOTBY, Office Scripts</li>
-                        <li><strong>Power BI:</strong> Reports, forecasting, automation</li>
-                        <li><strong>Microsoft Fabric:</strong> Dataflows, pipelines, end-of-month workflows</li>
-                        <li><strong>Dynamics 365 Finance:</strong> Integrated reporting, dual-write, analytics</li>
-                    </ul>
-                    <p class="text-lg leading-relaxed text-gray-700">
-                        I simplify complex finance and data workflows through:
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                        <li>LinkedIn posts & carousels</li>
-                        <li>GitHub projects</li>
-                        <li>Reels & Shorts (IG, TikTok, YouTube)</li>
-                        <li>Downloadable templates & dashboards</li>
-                    </ul>
+        <!-- Certifications Section -->
+        <section id="certifications" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">🎓 Certifications</h2>
+            <div class="space-y-6">
+                <!-- CFI Certifications -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📊 FMVA® — Financial Modeling & Valuation Analyst</h3>
+                    <p class="text-gray-500 mb-2">Certified by: Corporate Finance Institute</p>
+                    <a href="https://www.credential.net/a5aba2fc-b5b8-476a-b64a-c59bf17c7cea#acc.z9V3CBMP" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-link mr-2"></i>View Credential</a>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Recognitions & Fellowships</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📈 BIDA™ — Business Intelligence & Data Analyst</h3>
+                    <p class="text-gray-500 mb-2">Certified by: Corporate Finance Institute</p>
+                    <a href="https://www.credential.net/7cf78594-60f5-458b-b324-bcdc4c63b39a#acc.JE4ahGoH" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-link mr-2"></i>View Credential</a>
+                </div>
+                
+                <!-- Microsoft Certifications -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">🖥 Microsoft Certifications</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 pl-4">
                         <li>
-                            <a href="https://drive.google.com/file/d/1BSSJOHyCpUG0iHzXC9jpV92Abi02A6Sw/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Fellow of the AI in Business, Management, and Finance
-                            </a>
+                            <span class="font-semibold">PL‑300</span> – Power BI Data Analyst Associate
+                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/dec9f395aa1b63d5?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
                         </li>
                         <li>
-                            <a href="https://www.credential.net/7cf78594-60f5-458b-b324-bcdc4c63b39a#acc.S1bFPR4H" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                BIDA: Business Intelligence & Data Analysis
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.credential.net/a5aba2fc-b5b8-476a-b64a-c59bf17c7cea#acc.oAcdnq7e" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                FMVA® — Financial Modeling & Valuation Analyst
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/dec9f395aa1b63d5?ref=https%253A%252F%252F" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Microsoft Certified: Power BI Data Analyst Associate
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/307aba41668023c2?ref=https%253A%252F%252Fwww.linkedin.com%252F" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Microsoft Certified: Fabric Analytics Engineer Associate
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://basno.com/iohin3ax/certificate" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                CFA Investment Foundations certificate
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.credly.com/badges/2b9f11fe-e0da-46f6-ae6a-e48dab873a64/public_url" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                QuickBooks ProAdvisor
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://central.xero.com/s/print-certificate?id=a5TUv00000MgHWPMA3" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
-                                Xero Certified
-                            </a>
-                        </li>
-                    </ul>
-                    <h3 class="text-2xl font-semibold mb-4 mt-6 text-gray-800">Awards</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>2024 Global Recognition Awards for my outstanding leadership and creative enterprise solutions while serving as a Business Analytics Director Cadworks Ltd.</li>
-                    </ul>
-                    <h3 class="text-2xl font-semibold mb-4 mt-6 text-gray-800">Microsoft Community Contributions</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                        <!-- Add your Microsoft Community badge links here. Example: -->
-                        <!-- <li><a href="https://example.com/badge-link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Microsoft Community Badge - [Badge Name]</a></li> -->
-                    </ul>
-                    <h3 class="text-2xl font-semibold mb-4 mt-6 text-gray-800">How I Help Teams</h3>
-                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
-                        My work in analytics, automation, and AI-powered finance has helped teams:
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Reduce month-end close time</li>
-                        <li>Improve forecast accuracy</li>
-                        <li>Automate recurring tasks with Excel & Power BI</li>
-                        <li>Leverage Microsoft Fabric to centralize finance data</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <p class="text-xl font-medium text-gray-800">
-                    Whether you're in Finance, FP&A, Accounting, or Operations, let’s connect to exchange ideas and accelerate transformation with the right tools.
-                </p>
-            </div>
-
-            <!-- New: Tailored Insight Feature -->
-            <div class="mt-16 bg-blue-50 p-8 rounded-lg shadow-inner">
-                <h3 class="text-3xl font-bold text-center mb-6 text-blue-800">✨ Get Tailored Insight ✨</h3>
-                <p class="text-lg text-gray-700 text-center mb-6">
-                    Select your role to get a quick, AI-powered insight on how to accelerate transformation in your field.
-                </p>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-                    <select id="roleSelector" class="p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full md:w-auto">
-                        <option value="Finance">Finance Professional</option>
-                        <option value="FP&A">FP&A Specialist</option>
-                        <option value="Accounting">Accounting Professional</option>
-                        <option value="Operations">Operations Manager</option>
-                    </select>
-                    <button id="getInsightBtn" class="bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-blue-800 transform hover:scale-105 transition-all duration-300 flex items-center justify-center w-full md:w-auto">
-                        <i id="insightIcon" class="fas fa-lightbulb mr-2"></i> 
-                        <span id="insightButtonText">Get Insight</span>
-                    </button>
-                </div>
-                <div id="insightOutput" class="mt-8 p-6 bg-white rounded-lg shadow-md text-gray-800 text-lg leading-relaxed hidden border-l-4 border-blue-600">
-                    <!-- AI-generated insight will be displayed here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Project Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Linear Regression Analysis in Excel</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project aimed at advanced financial modeling with Fabric: Utilizing Microsoft Fabric to create a unified data estate for both operational (call center) and financial (D365) data. This would enable more sophisticated cross-domain analysis, predictive modeling for resource needs, and advanced cost allocation.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW PROJECT
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Why Finance Teams Are The Future of Business Intelligence</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project aimed at cleaning and transforming the raw dataset, making it suitable for analysis.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW PROJECT
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 3: Updated Title -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Financial Insights through Data Storytelling</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project focuses on visually representing financial KPIs and identifying trends and patterns to drive strategic business decisions.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW PROJECT
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Sales Analysis in Excel</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project aimed at identifying important KPIs, analysing data and providing insights and impactful recommendations.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW PROJECT
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Business Analysis in SQL</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project analyzing data to provide answers to business questions and extract insights to enhance business growth.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW PROJECT REPORT
-                        </a>
-                        <a href="#" class="inline-block bg-gray-700 text-white font-medium py-2 px-4 rounded-md hover:bg-gray-800 transition-colors text-sm">
-                            VIEW FULL CODE
-                        </a>
-                    </div>
-                </div>
-
-                <!-- New Project Card -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">I Solved a Real SQL Reporting Problem in Microsoft Fabric</h3>
-                    <p class="text-gray-700 mb-4">
-                        This project documents how I used Microsoft Fabric to solve a complex SQL reporting problem, demonstrating a practical application of data integration and analytics.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="https://medium.com/@olamoyegun07/i-solved-a-real-sql-reporting-problem-in-microsoft-fabric-248c336ef91e" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                            VIEW FULL ARTICLE
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center mt-12">
-                <a href="#" class="inline-block bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 transform hover:scale-105 transition-all duration-300">
-                    Download Resume (Coming Soon)
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications & Resources Section -->
-    <section id="publications" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Publications & Resources</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-
-                <!-- Ebook Card -->
-                <div class="bg-gray-50 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300 col-span-1 md:col-span-2 lg:col-span-1">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">50 ChatGPT Finance Prompts for Smarter Business Decisions</h3>
-                    <div class="flex justify-center mb-4">
-                        <!-- Using a generic placeholder for the preview environment -->
-                        <img src="https://placehold.co/200x250/a0c4ff/ffffff?text=Ebook+Cover" alt="Ebook Cover: 50 ChatGPT Finance Prompts" class="rounded-lg shadow-md max-w-full h-auto">
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Unlock smarter financial decisions with this comprehensive guide featuring 50 expertly crafted ChatGPT prompts. Available in Premium, Standard, and Starter editions.
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <a href="https://selar.com/7a67185771" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-600 text-white font-medium py-2 px-4 rounded-md hover:bg-green-700 transition-colors text-sm">
-                            PREMIUM
-                        </a>
-                        <a href="https://selar.com/oy37x3w535" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-600 text-white font-medium py-2 px-4 rounded-md hover:bg-yellow-700 transition-colors text-sm">
-                            STANDARD
-                        </a>
-                        <a href="https://selar.com/377i82hx73" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md hover:bg-red-700 transition-colors text-sm">
-                            STARTER
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Other Resources Card (Notion, Medium) -->
-                <div class="bg-gray-50 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300 col-span-1 md:col-span-1 lg:col-span-2">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Other Resources</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-3">
-                        <li>
-                            <a href="https://www.notion.so/23f09b8261668079a8d1cc6764e04433?source=copy_link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline flex items-center">
-                                <i class="fas fa-file-alt mr-2 text-xl"></i> Notion Workspace
-                            </a>
-                            <p class="text-sm text-gray-600 ml-6">Explore my curated templates and resources on Notion.</p>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@olamoyegun07" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline flex items-center">
-                                <i class="fab fa-medium mr-2 text-xl"></i> Medium Articles
-                            </a>
-                            <p class="text-sm text-gray-600 ml-6">Read my insights and articles on finance and data.</p>
+                            <span class="font-semibold">DP‑600</span> – Fabric Analytics Engineer Associate
+                            <a href="https://learn.microsoft.com/en-us/users/olufemiolamoyegun-3237/credentials/307aba41668023c2?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
                         </li>
                     </ul>
                 </div>
-
+                
+                <!-- Accounting Tools -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">📄 Accounting Tools</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 pl-4">
+                        <li>
+                            <span class="font-semibold">CFA Investment Foundation Certificate</span>
+                            <a href="https://basno.com/iohin3ax/certificate" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold">QuickBooks ProAdvisor</span>
+                            <a href="https://www.credly.com/badges/2b9f11fe-e0da-46f6-ae6a-e48dab873a64/public_url" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                        <li>
+                            <span class="font-semibold">Xero Certified Advisor</span>
+                            <a href="https://central.xero.com/s/print-certificate?id=a5TUv00000MgHWPMA3" target="_blank" class="text-blue-600 hover:underline ml-2 text-sm"><i class="fas fa-link mr-1"></i>View Credential</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
-            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
-                <div class="space-y-6 text-center">
+        <!-- Merged Projects Section -->
+        <section id="projects_demos" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">💻 Projects & Demos</h2>
+            <p class="text-gray-600 mb-6">
+                This repository is a collection of my work in finance automation, analytics, and business intelligence. Here you'll find everything from practical Excel templates to comprehensive Power BI and Microsoft Fabric projects.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">💡 No-Code Excel Demos & Templates</h3>
+            <p class="text-gray-600 mb-4">Practical, ready-to-use solutions for finance professionals:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- New Project Card 1: Payroll Calculator -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Payroll+Calculator" alt="Payroll Calculator Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Payroll Calculator (2025 Tax Law Update)</h4>
+                    <p class="text-gray-500 mb-4">Automated payroll and PAYE calculator with new reliefs, personal allowances, and band tax calculations. (Excel Template)</p>
+                    <a href="/excel/payroll-calculator-2025" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/payroll-calculator-2025</a>
+                </div>
+
+                <!-- New Project Card 2: Event Log Tracker -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Event+Log+Tracker" alt="Event Log Tracker Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Event Log Tracker with Conditional Formatting</h4>
+                    <p class="text-gray-500 mb-4">Automatically highlights past events older than 3 or 6 months, with whole-row formatting for visibility. (Excel Template)</p>
+                    <a href="/excel/conditional-formatting" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/conditional-formatting</a>
+                </div>
+
+                <!-- New Project Card 3: Budget vs. Actuals -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Budget+vs+Actuals" alt="Budget vs. Actuals Dashboard Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Budget vs. Actuals Dashboard</h4>
+                    <p class="text-gray-500 mb-4">Dynamic Excel dashboard for tracking monthly performance, with variance analysis and conditional alerts.</p>
+                    <a href="/excel/budget-vs-actuals" class="text-blue-600 hover:underline"><i class="fas fa-folder mr-2"></i>/excel/budget-vs-actuals</a>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">📊 Analytics & Finance Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project Card 1 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Fabric+Data+Estate+Preview" alt="Microsoft Fabric Data Estate Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Microsoft Fabric: Unified Financial Data Estate</h4>
+                    <p class="text-gray-500 mb-4">Built a proof-of-concept model integrating Dynamics 365 Finance with call-center operational data for advanced cost allocation and forecasting. (GitHub Repo)</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                <!-- Project Card 2 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=PySpark+SCD+2" alt="PySpark SCD Type 2 Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">SCD Type 2 Implementation (PySpark)</h4>
+                    <p class="text-gray-500 mb-4">Hands-on demo of Slowly Changing Dimensions for finance master data management, with business rules and version tracking. (GitHub Repo)</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                <!-- Project Card 3 with visual placeholder -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Power+BI+Reports" alt="Power BI Reports Preview" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Power BI Finance Reports</h4>
+                    <p class="text-gray-500 mb-4">End-to-end reporting templates, including rolling forecasts, cash flow dashboards, and management KPIs.</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+                 <!-- Project Card 4 with visual placeholder -->
+                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Sales+Dashboard+Preview" alt="Sales Analysis in Excel" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-2">Sales Analysis in Excel</h4>
+                    <p class="text-gray-500 mb-4">This project aimed at identifying important KPIs, analysing data and providing insights and impactful recommendations.</p>
+                    <a href="#" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">VIEW PROJECT</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Community Section -->
+        <section id="community" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">🌍 Community Contributions</h2>
+            <p class="text-gray-600 mb-6">
+                I'm committed to sharing my knowledge and contributing to the finance and data community. Here are some of the platforms where I've contributed.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start space-x-4">
+                    <div class="text-4xl text-yellow-600">🥉</div>
                     <div>
-                        <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
-                        <p class="text-lg text-gray-700">Lagos, Nigeria</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone text-blue-600 text-2xl mb-2"></i>
-                        <p class="text-lg text-gray-700">(Phone number not provided)</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-envelope text-blue-600 text-2xl mb-2"></i>
-                        <p class="text-lg text-gray-700">
-                            <a href="mailto:femi_olamoyegun@outlook.com" class="text-blue-600 hover:underline">femi_olamoyegun@outlook.com</a>
-                        </p>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Excel Tech Community – Brass Contributor (2024)</h3>
+                        <p class="text-gray-500 mb-4">Shared step-by-step answers, downloadable templates, and no-code solutions.</p>
+                        <a href="https://github.com/olufemiolamoyegun" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-external-link-alt mr-2"></i>View My Contributions</a>
                     </div>
                 </div>
-                <div class="mt-10 text-center">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Connect with me</h3>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://linkedin.com/in/olufemi-olamoyegun" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 transition-colors transform hover:scale-110">
-                            <i class="fab fa-linkedin text-4xl"></i>
-                        </a>
-                        <a href="https://github.com/olufemiolamoyegun" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-gray-900 transition-colors transform hover:scale-110">
-                            <i class="fab fa-github text-4xl"></i>
-                        </a>
-                        <a href="https://x.com/olamfe" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600 transition-colors transform hover:scale-110">
-                            <i class="fab fa-twitter text-4xl"></i>
-                        </a>
-                        <a href="https://instagram.com/olufemi_olamoyegun" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 transition-colors transform hover:scale-110">
-                            <i class="fab fa-instagram text-4xl"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@olufemiolamoyegun2038" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 transition-colors transform hover:scale-110">
-                            <i class="fab fa-youtube text-4xl"></i>
-                        </a>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start space-x-4">
+                    <div class="text-4xl text-blue-600">📊</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-1">Power BI Community – Frequent Visitor</h3>
+                        <p class="text-gray-500 mb-4">Active in discussions, sharing visualization best practices and financial modeling techniques.</p>
+                        <a href="https://www.linkedin.com/in/olufemiolamoyegun/" target="_blank" class="text-blue-600 hover:underline"><i class="fas fa-external-link-alt mr-2"></i>View Profile</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8 text-center">
-        <div class="container mx-auto px-4">
-            <p>© <span id="current-year"></span> Olufemi Olamoyegun. All rights reserved.</p>
-            <p class="text-sm mt-2">Design inspired by HTML5 UP and styled with Tailwind CSS</p>
-        </div>
-    </footer>
+        <!-- New Publications Section -->
+        <section id="publications" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">📝 Publications & Writing</h2>
+            <p class="text-gray-600 mb-6">
+                I regularly write articles and create resources to help finance professionals streamline their work with modern tools.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- New Publication: Payroll Ebook -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Ebook: Automated Payroll & PAYE Calculator</h3>
+                    <p class="text-gray-500 mb-4">A comprehensive guide and calculator template for automating payroll with updated tax laws, reliefs, and band tax calculations.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://tr.ee/NS6IUDfGqm" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">PREMIUM</a>
+                        <a href="https://tr.ee/3ojH0X8g5L" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STANDARD</a>
+                        <a href="https://tr.ee/NS6IUDfGqm" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STARTER</a>
+                    </div>
+                </div>
+                <!-- Publication Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">50 ChatGPT Finance Prompts for Smarter Business Decisions</h3>
+                    <p class="text-gray-500 mb-4">Practical guide for finance teams to integrate AI into workflows.</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">PREMIUM</a>
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STANDARD</a>
+                        <a href="#" target="_blank" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors text-sm">STARTER</a>
+                    </div>
+                </div>
+                <!-- Articles and Guides Card -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Articles & Guides</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 pl-4">
+                        <li>
+                            Articles on <span class="font-semibold">Medium</span> and <span class="font-semibold">LinkedIn</span> covering Excel, Power BI, and Finance automation.
+                        </li>
+                        <li>
+                            Curated templates and resources in my <span class="font-semibold">Notion Workspace</span>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <ul class="space-y-2 text-gray-600">
+                <li><i class="fas fa-map-marker-alt mr-2"></i>Lagos, Nigeria</li>
+                <li><i class="fas fa-envelope mr-2"></i>femi_olamoyegun@outlook.com</li>
+                <li>
+                    <i class="fas fa-globe mr-2"></i>Connect with me: 
+                    <a href="https://www.linkedin.com/in/olufemiolamoyegun/" target="_blank" class="text-blue-600 hover:underline ml-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/olufemiolamoyegun" target="_blank" class="text-gray-800 hover:underline ml-2"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </div>
 
-    <script>
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Simple scroll animation for hero section elements (optional, for visual flair)
-        document.addEventListener('DOMContentLoaded', () => {
-            const heroElements = document.querySelectorAll('.animate-fade-in-up');
-            heroElements.forEach((el, index) => {
-                el.style.opacity = 0;
-                el.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
-                    el.style.opacity = 1;
-                    el.style.transform = 'translateY(0)';
-                }, 100 * index);
-            });
-
-            const getInsightBtn = document.getElementById('getInsightBtn');
-            const roleSelector = document.getElementById('roleSelector');
-            const insightOutput = document.getElementById('insightOutput');
-            const insightButtonText = document.getElementById('insightButtonText');
-            const insightIcon = document.getElementById('insightIcon');
-
-            const prompts = {
-                "Finance": "As a CFO and analytics expert, provide a concise, actionable tip (max 50 words) for a Finance Professional on leveraging Power BI for more dynamic financial reporting and real-time performance tracking.",
-                "FP&A": "As an expert in financial modeling and automation, provide a concise, actionable tip (max 50 words) for an FP&A Specialist on using Excel 365's new functions or Microsoft Fabric to automate forecasting models and reduce manual data consolidation.",
-                "Accounting": "As a finance and data specialist, provide a concise, actionable tip (max 50 words) for an Accounting Professional on using Microsoft Fabric and Power BI to streamline month-end close processes and improve audit trail visibility.",
-                "Operations": "As an analytics-driven leader, provide a concise, actionable tip (max 50 words) for an Operations Manager on how to use Microsoft Fabric to unify operational data, enabling predictive maintenance or improving supply chain efficiency."
-            };
-
-            getInsightBtn.addEventListener('click', async () => {
-                const selectedRole = roleSelector.value;
-                insightOutput.classList.add('hidden'); // Hide previous output
-                insightButtonText.textContent = "Generating...";
-                insightIcon.classList.remove('fa-lightbulb');
-                insightIcon.classList.add('spinner');
-                getInsightBtn.disabled = true; // Disable button while loading
-
-                const prompt = prompts[selectedRole];
-
-                let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-
-                const payload = { contents: chatHistory };
-                const apiKey = ""; // Canvas will provide this at runtime
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    const result = await response.json();
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        insightOutput.textContent = text;
-                        insightOutput.classList.remove('hidden'); // Show output
-                    } else {
-                        insightOutput.textContent = "Sorry, I couldn't generate an insight at this time. Please try again.";
-                        insightOutput.classList.remove('hidden');
-                    }
-                } catch (error) {
-                    console.error('Error calling Gemini API:', error);
-                    insightOutput.textContent = "An error occurred while fetching the insight. Please try again later.";
-                    insightOutput.classList.remove('hidden');
-                } finally {
-                    insightButtonText.textContent = "Get Insight";
-                    insightIcon.classList.remove('spinner');
-                    insightIcon.classList.add('fa-lightbulb');
-                    getInsightBtn.disabled = false; // Enable button
-                }
-            });
-        });
-    </script>
 </body>
 </html>
